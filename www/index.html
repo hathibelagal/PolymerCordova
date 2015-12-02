@@ -2,15 +2,8 @@
     <head>       
         <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html"/> 
         <link rel="import" href="./tasks-list.html"/>
-	<script src="cordova.js"></script>
     </head>
     <body class="fullbleed layout vertical">
-        <script>
-	     document.addEventListener('deviceready', function(){
-                var tasksList = document.createElement('tasks-list');
-                document.body.appendChild(tasksList);
-                StatusBar.backgroundColorByHexString('#1A237E');
-	     }, false);		
-        </script>
+        <tasks-list/>
     </body>
 </html>
